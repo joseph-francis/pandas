@@ -36,4 +36,7 @@ df7_t["My Address"] = ["My City", "My Country", 10, 7, "Shop", "My state", "My c
 df7 = df7_t
 
 nom = ArcGIS()
-nom.geocode()
+n = nom.geocode("39295 23rd St, San Francisco, Ca 963123")
+print(n.lattitude, n.longitude)
+
+
